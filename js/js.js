@@ -1,7 +1,8 @@
 console.log('ok');
 
 let right_state = true;
-let last_clicked_id;
+let banner_btn = $('.btn_handel').children('.btn_1')[0];
+let last_clicked_id = banner_btn.id;
 $('.btn_1').click(function (e) {
     let w = $(this).width();
     if (last_clicked_id !== $(this).attr('id')){
