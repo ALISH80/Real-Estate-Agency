@@ -127,21 +127,39 @@ img {
     font-size: 20px;
 }
 
-.Banner .btn_1 {
+div.Banner div.btn_handel{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 11%;
+    position: relative;
+}
+div.Banner div.btn_handel .btn_1 {
     background-color: Transparent;
     background-repeat: no-repeat;
     border: none;
     font-weight: bolder;
     color: black;
     position: relative;
-    left: 20rem;
     font-size: 19px;
     padding: 10px;
+    z-index: 10;
 }
 
 .Yellow_Color {
     background-color: #FFB900 !important;
     border: 1px solid #FFB900;
+}
+
+div.Banner div.btn_handel div.btn-back{
+    background: #FFB900;
+    width: 6rem;
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
 }
 
 .box {
