@@ -9,10 +9,14 @@ $('.btn_1').click(function (e) {
         let myElement = document.querySelector('.btn-back');
         if(right_state){
             myElement.style.transform = "translateX(" + (-w*1.3) + "px)";
+            document.querySelector("#rent-box").style.visibility="visible";
+            document.querySelector("#sell-box").style.visibility="hidden";
             right_state = false;
         }
         else {
             myElement.style.transform = "translateX(" + (0) + "px)";
+            document.querySelector("#sell-box").style.visibility="visible";
+            document.querySelector("#rent-box").style.visibility="hidden";
             right_state = true;
         }
         last_clicked_id = $(this).attr('id');

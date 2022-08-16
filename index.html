@@ -16,7 +16,7 @@
     <div class="gray_header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-4">
                     <div class="Social_Icons">
                         <a href=""><i class="Social text-white fa-brands fa-youtube"
                                       style="color: #FB000F !important;"></i></a>
@@ -28,24 +28,26 @@
                                       style="color: #CD2E80 !important;"></i></a>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-md-8">
                     <a class="Y_btn" href="">
-                        <button class="Yellow_btn">ثبت ملک</button>
+                        <button class="Aqua_btn">ثبت نام</button>
+                        <button class="Aqua_btn Enter-btn">ورود</button>
                     </a>
-                    <a class="Num" href="tel:021-12345678"><p class="Phone_Number">021-12346578</p></a>
                     <i class="Phone_Icon text-white fa fa-phone" aria-hidden="true"></i>
+                    <a class="Num" href="tel:021-12345678"><p class="Phone_Number">021-12346578</p></a>
+                    
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-3">
+            <div class="col-lg-3">
                 <a href="">
                     <img class="logo" src="images/logo.png" alt="">
                 </a>
             </div>
-            <div class="col-9">
+            <div class="col-lg-9">
                 <ul class="Navbar">
                     <a href="">
                         <li>
@@ -129,103 +131,194 @@
         <button class="btn_1" id="b_2">اجاره ملک</button>
         <div class="btn-back"></div>
     </div>
-    <div class="container">
-        <form class="box" action="">
-            <div class="row">
-                <div class="pad col-5">
-                    <input class="Input" type="text" placeholder="ملک ، موقعیت مکانی را وارد کنید ...">
-                </div>
-                <div class="pad col-4">
-                    <input class="Input" type="text" placeholder="شهر">
-                </div>
-                <div class="pad col-3">
-                    <div class="Drop dropdown">
-                        <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu4"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>نوع ملک</span>
+    <div class="big-box">
+        <div class="container sell-box" id="sell-box">
+            <form class="box" action="">
+                <div class="row">
+                    <div class="pad col-5">
+                        <input class="Input" type="text" placeholder="ملک ، موقعیت مکانی را وارد کنید ...">
+                    </div>
+                    <div class="pad col-4">
+                        <input class="Input" type="text" placeholder="شهر">
+                    </div>
+                    <div class="pad col-3">
+                        <div class="Drop dropdown">
+                            <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu4"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>نوع ملک</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                                <li>
+                                    <button class="dropdown-item" type="button">مسکونی</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">تجاری</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">زمین</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="Drop dropdown">
+                            <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu5"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>اتاق خواب</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                                <li>
+                                    <button class="dropdown-item" type="button">1</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">2</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">3</button>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="pad col-3">
+                        <div class="Drop dropdown">
+                            <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu6"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>حمام</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu6">
+                                <li>
+                                    <button class="dropdown-item" type="button">1</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">2</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">3</button>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="pad col-4">
+                        <div class="Drop dropdown">
+                            <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu7"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>قیمت</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu7">
+                                <li class="option">
+                                    <input class="Input rent-option" type="text" placeholder="حداقل قیمت (تومان)"></input>
+                                </li>
+                                <li class="option">
+                                    <input class="Input rent-option" type="text" placeholder="حداکثر قیمت (تومان)"></input>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="pad col-2">
+                        <button class="Search Input" value="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>جستجو</span>
                         </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
-                            <li>
-                                <button class="dropdown-item" type="button">مسکونی</button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item" type="button">تجاری</button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item" type="button">زمین</button>
-                            </li>
-                        </ul>
                     </div>
                 </div>
-                <div class="col-3">
-                    <div class="Drop dropdown">
-                        <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu5"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>اتاق خواب</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
-                            <li>
-                                <button class="dropdown-item" type="button">1</button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item" type="button">2</button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item" type="button">3</button>
-                            </li>
-                        </ul>
+            </form>
+        </div>
+        <div class="container rent-box" id="rent-box">
+            <form class="box" action="">
+                <div class="row">
+                    <div class="pad col-5">
+                        <input class="Input" type="text" placeholder="ملک ، موقعیت مکانی را وارد کنید ...">
                     </div>
-
-                </div>
-                <div class="pad col-3">
-                    <div class="Drop dropdown">
-                        <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu6"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>حمام</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu6">
-                            <li>
-                                <button class="dropdown-item" type="button">1</button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item" type="button">2</button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item" type="button">3</button>
-                            </li>
-                        </ul>
+                    <div class="pad col-4">
+                        <input class="Input" type="text" placeholder="شهر">
                     </div>
-
-                </div>
-                <div class="pad col-4">
-                    <div class="Drop dropdown">
-                        <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu7"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>قیمت</span>
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu7">
-                            <li>
-                                <button class="dropdown-item" type="button">زیر 1 میلیارد</button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item" type="button">بین 1 تا 3 میلیارد</button>
-                            </li>
-                            <li>
-                                <button class="dropdown-item" type="button">بالای 3 میلیارد</button>
-                            </li>
-                        </ul>
+                    <div class="pad col-3">
+                        <div class="Drop dropdown">
+                            <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu4"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>نوع ملک</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                                <li>
+                                    <button class="dropdown-item" type="button">مسکونی</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">تجاری</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">زمین</button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-
+                    <div class="col-3">
+                        <div class="Drop dropdown">
+                            <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu5"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>اتاق خواب</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                                <li>
+                                    <button class="dropdown-item" type="button">1</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">2</button>
+                                </li>
+                                <li>
+                                    <button class="dropdown-item" type="button">3</button>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="pad col-3">
+                        <div class="Drop dropdown">
+                            <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu6"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>ودیعه</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu6">
+                                <li class="option">
+                                    <input class="Input rent-option" type="text" placeholder="حداقل رهن(تومان)"></ه>
+                                </li>
+                                <li class="option">
+                                    <input class="Input rent-option" type="text" placeholder="حداکثر رهن(تومان)"></ه>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="pad col-4">
+                        <div class="Drop dropdown">
+                            <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu7"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                <span>اجاره</span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu7">
+                                <li class="option">
+                                    <input class="Input rent-option" type="text" placeholder="حداقل اجاره (تومان)"></input>
+                                </li>
+                                <li class="option">
+                                    <input class="Input rent-option" type="text" placeholder="حداکثر اجاره (تومان)"></input>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div>
+                    <div class="pad col-2">
+                        <button class="Search Input" value="">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>جستجو</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="pad col-2">
-                    <button class="Search Input" value="">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <span>جستجو</span>
-                    </button>
-                </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
+    
 
 </div>
 <div class="Content container">
