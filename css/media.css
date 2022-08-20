@@ -1,0 +1,576 @@
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fa-bars {
+    display: var(--fa-display, inline-block);
+  }
+  .Header {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fa-bars {
+    display: none;
+  }
+  .Header {
+    display: block;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 576px) {
+  .cities {
+    padding: 0 0 !important;
+  }
+  .search {
+    font-size: 9.7px;
+  }
+  .Box span {
+    font-size: 10px;
+  }
+  .Input {
+    font-size: 10px;
+    height: 35px;
+  }
+  .fa-magnifying-glass {
+    font-size: 9px;
+  }
+  .Drop > button {
+    font-size: 10px;
+    height: 35px;
+  }
+  .Drop {
+    height: unset;
+  }
+  .btn_1 {
+    font-size: 14px !important;
+    color: white !important;
+  }
+  .btn-back {
+    width: 5rem !important;
+    height: 40px !important;
+  }
+  .Banner h1 {
+    font-size: 25px;
+    color: snow;
+  }
+  .Banner p {
+    font-size: 12px;
+  }
+  .Navbar li {
+    margin-left: 6px;
+  }
+  .find-house h1 {
+    font-size: 10px;
+  }
+  .find-house p {
+    font-size: 5px;
+  }
+  .post-box h2 {
+    font-size: 10px;
+  }
+  .box1 span {
+    font-size: 11px;
+  }
+  .fa-location-crosshairs {
+    font-size: 11px;
+  }
+  .fa-heart,
+  .fa-right-left {
+    font-size: 10px;
+  }
+  .price span {
+    font-size: 16px;
+  }
+  .buy-house p {
+    font-size: 6px;
+    padding: 0 2rem;
+  }
+  .title {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .footer-box p {
+    font-size: 7px;
+  }
+  .phone-sign span a {
+    font-size: 16px;
+  }
+  .Social-Icons {
+    font-size: 26px;
+    margin-top: 8px;
+  }
+  .map-sign span {
+    font-size: 9px;
+  }
+  .Links ul li a {
+    font-size: 6.5px;
+  }
+  .small-img-txt h4 {
+    font-size: 14px;
+  }
+  .footer-box input {
+    padding: 1px 14px;
+    font-size: 10px;
+  }
+  .fa-phone {
+    font-size: 18px;
+  }
+  .fa-signs-post {
+    font-size: 20px;
+  }
+  #set-box {
+    margin: 3rem 0 !important;
+  }
+  .small-img-txt span {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+  footer {
+    padding: 2rem 2.5rem;
+  }
+  .counsellor h1,
+  .Content h1,
+  .buy-house h1,
+  .rent h1,
+  .popular_locations h1 {
+    font-size: 20px;
+  }
+  .txt-img span {
+    font-size: 11px;
+  }
+  .image-responsive-box {
+    padding: 0 3rem;
+  }
+  .counsellor p,
+  .Content p,
+  .icon p {
+    font-size: 10px;
+  }
+  .rent-p,
+  .popular_locations p {
+    font-size: 14px !important;
+  }
+  .start-btn input {
+    font-size: 6px;
+    padding: 6px 9px;
+  }
+  .set-box {
+    margin: 3rem 1rem !important;
+  }
+  .Banner {
+    height: 40rem;
+  }
+  .box {
+    padding: 25px;
+  }
+  .sell-box,
+  .rent-box {
+    width: 75vw !important;
+  }
+  .find-house {
+    padding: 0 2rem 0 1rem !important;
+  }
+  .footer-logo {
+    border-bottom: 1px solid snow;
+    padding-bottom: 10px;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .cities {
+    padding: 0 0 !important;
+  }
+  .search {
+    font-size: 9.7px;
+  }
+  .Box span {
+    font-size: 10px;
+  }
+  .Input {
+    font-size: 10px;
+  }
+  .fa-magnifying-glass {
+    font-size: 9px;
+  }
+  .Banner h1 {
+    font-size: 40px;
+  }
+  .Banner p {
+    font-size: 14px;
+  }
+  .Navbar li {
+    margin-left: 6px;
+  }
+  .find-house h1 {
+    font-size: 15px;
+  }
+  .find-house p {
+    font-size: 6px;
+  }
+  .post-box h2 {
+    font-size: 10px;
+  }
+  .box1 span {
+    font-size: 11px;
+  }
+  .fa-location-crosshairs {
+    font-size: 11px;
+  }
+  .fa-heart,
+  .fa-right-left {
+    font-size: 10px;
+  }
+  .price span {
+    font-size: 16px;
+  }
+  .buy-house p {
+    font-size: 8px;
+    padding: 0 8rem;
+  }
+  .title {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .footer-box p {
+    font-size: 7px;
+  }
+  .phone-sign span a {
+    font-size: 16px;
+  }
+  .Social-Icons {
+    font-size: 26px;
+  }
+  .map-sign span {
+    font-size: 9px;
+  }
+  .Links ul li a {
+    font-size: 6.5px;
+  }
+  .small-img-txt h4 {
+    font-size: 14px;
+  }
+  .footer-box input {
+    padding: 4px 18px;
+  }
+  .fa-phone {
+    font-size: 18px;
+  }
+  .fa-signs-post {
+    font-size: 20px;
+  }
+  .small-img-txt span {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+  footer {
+    padding: 2rem 2.5rem;
+  }
+  .counsellor h1,
+  .Content h1,
+  .buy-house h1,
+  .rent h1,
+  .popular_locations h1 {
+    font-size: 35px;
+  }
+  .txt-img span {
+    font-size: 11px;
+  }
+  .image-responsive-box {
+    padding: 0 7rem;
+  }
+  .counsellor p,
+  .Content p,
+  .icon p {
+    font-size: 10px;
+  }
+  .rent-p,
+  .popular_locations p {
+    font-size: 14px !important;
+  }
+  .start-btn input {
+    font-size: 8px;
+    padding: 10px 15px;
+  }
+  .Banner {
+    height: 35rem;
+  }
+  .find-house {
+    padding: 0 5rem 0 4rem !important;
+  }
+  .footer-logo {
+    border-bottom: 1px solid snow;
+    padding-bottom: 10px;
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 920px) {
+  .search {
+    font-size: 9.7px;
+  }
+  .Box span {
+    font-size: 10px;
+  }
+  .Input {
+    font-size: 10px;
+  }
+  .fa-magnifying-glass {
+    font-size: 9px;
+  }
+  .Banner h1 {
+    font-size: 40px;
+  }
+  .Banner p {
+    font-size: 14px;
+  }
+  .Navbar li {
+    margin-left: 6px;
+  }
+  .find-house h1 {
+    font-size: 15px;
+  }
+  .find-house p {
+    font-size: 6px;
+  }
+  .post-box h2 {
+    font-size: 10px;
+  }
+  .box1 span {
+    font-size: 11px;
+  }
+  .fa-location-crosshairs {
+    font-size: 11px;
+  }
+  .fa-heart,
+  .fa-right-left {
+    font-size: 10px;
+  }
+  .price span {
+    font-size: 16px;
+  }
+  .buy-house p {
+    font-size: 11px;
+    padding: 0 12rem;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .footer-box p {
+    font-size: 7px;
+  }
+  .phone-sign span a {
+    font-size: 16px;
+  }
+  .Social-Icons {
+    font-size: 26px;
+  }
+  .map-sign span {
+    font-size: 9px;
+  }
+  .Links ul li a {
+    font-size: 6.5px;
+  }
+  .small-img-txt h4 {
+    font-size: 14px;
+  }
+  .footer-box input {
+    padding: 4px 18px;
+  }
+  .fa-phone {
+    font-size: 18px;
+  }
+  .fa-signs-post {
+    font-size: 20px;
+  }
+  .small-img-txt span {
+    font-size: 12px;
+    padding: 3px 10px;
+  }
+  footer {
+    padding: 2rem 2.5rem;
+  }
+  .counsellor h1,
+  .Content h1,
+  .buy-house h1,
+  .rent h1,
+  .popular_locations h1 {
+    font-size: 35px;
+  }
+  .counsellor p,
+  .Content p,
+  .icon p {
+    font-size: 10px;
+  }
+  .rent-p,
+  .popular_locations p {
+    font-size: 14px !important;
+  }
+  .cities {
+    padding: 0 3rem !important;
+  }
+  .start-btn input {
+    font-size: 10px;
+    padding: 15px 20px;
+  }
+  .Banner {
+    height: 30rem;
+  }
+}
+
+@media screen and (min-width: 920px) and (max-width: 1024px) {
+  .post-box h2 {
+    font-size: 16px;
+  }
+  .counsellor h1,
+  .Content h1,
+  .buy-house h1,
+  .rent h1,
+  .popular_locations h1 {
+    font-size: 40px;
+  }
+  .start-btn input {
+    font-size: 12px;
+    padding: 18px 25px;
+  }
+  .box1 span {
+    font-size: 11px;
+  }
+  .fa-location-crosshairs {
+    font-size: 11px;
+  }
+  .fa-heart,
+  .fa-right-left {
+    font-size: 10px;
+  }
+  .Banner h1 {
+    font-size: 50px;
+  }
+  .icon p {
+    font-size: 11px;
+  }
+  .price span {
+    font-size: 16px;
+  }
+  .buy-house p {
+    font-size: 11px;
+    padding: 0 16.5rem;
+  }
+  .find-house h1 {
+    font-size: 22px;
+  }
+  .find-house p {
+    font-size: 10px;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .footer-box p {
+    font-size: 9px;
+  }
+  .phone-sign span a {
+    font-size: 16px;
+  }
+  .Social-Icons {
+    font-size: 26px;
+  }
+  .map-sign span {
+    font-size: 9px;
+  }
+  .Links ul li a {
+    font-size: 7.5px;
+  }
+  .small-img-txt h4 {
+    font-size: 16px;
+  }
+  .footer-box input {
+    padding: 6px 21px;
+  }
+  .fa-phone {
+    font-size: 18px;
+  }
+  .fa-signs-post {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1220px) {
+  footer {
+    background-color: black;
+    padding: 2rem 2.5rem;
+  }
+  .icon p {
+    font-size: 9px;
+  }
+  .buy-house p {
+    font-size: 12px;
+    padding: 0 18.5rem;
+  }
+  .find-house h1 {
+    font-size: 26px;
+  }
+  .find-house p {
+    font-size: 11px;
+  }
+  .title {
+    font-size: 17px;
+  }
+  .footer-box p {
+    font-size: 9px;
+  }
+  .phone-sign span a {
+    font-size: 19px;
+  }
+  .Social-Icons {
+    font-size: 30px;
+  }
+  .map-sign span {
+    font-size: 12px;
+  }
+  .Links ul li a {
+    font-size: 11px;
+  }
+  .small-img-txt h4 {
+    font-size: 16px;
+  }
+  .footer-box input {
+    padding: 8px 25px;
+  }
+  .fa-phone {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 1220px) and (max-width: 1320px) {
+  footer {
+    background-color: black;
+    padding: 2rem 4.5rem;
+  }
+  .find-house h1 {
+    font-size: 34px;
+  }
+  .find-house p {
+    font-size: 15px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  .footer-box p {
+    font-size: 13px;
+  }
+  .phone-sign span a {
+    font-size: 22px;
+  }
+  .Social-Icons {
+    font-size: 35px;
+  }
+  .icon p {
+    font-size: 14px;
+  }
+}

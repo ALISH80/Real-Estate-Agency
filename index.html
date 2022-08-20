@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Real estate agent</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
           integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
@@ -14,9 +15,10 @@
 <body>
 <section id="heading">
     <div class="gray_header">
+        <i class="fa-solid fa-bars" onclick="openNav()"></i>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-6 col-md-4">
+                <div class="col-lg-6 col-md-4 col-sm-8 col-12">
                     <div class="Social_Icons">
                         <a href=""><i class="Social text-white fa-brands fa-youtube"
                                       style="color: #FB000F !important;"></i></a>
@@ -28,7 +30,7 @@
                                       style="color: #CD2E80 !important;"></i></a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-8">
+                <div class="col-lg-6 col-md-8 col-sm-4 col-12 login">
                     <a class="Y_btn" href="">
                         <button class="Aqua_btn">ثبت نام</button>
                         <button class="Aqua_btn Enter-btn">ورود</button>
@@ -40,14 +42,47 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img class="side-logo" src="images/logo2.png" alt="">
+        <a class="Y_btn" href="">
+            <button class="Aqua_btn">ثبت نام</button>
+            <button class="Aqua_btn Enter-btn">ورود</button>
+        </a>
+        <button class="dropdown-btn">خانه
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">مشاوران</a>
+            <a href="#">نمایندگی ها</a>
+            <a href="#">ارسال ملک</a>
+          </div>
+        <button class="dropdown-btn">املاک
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">مشاوران</a>
+            <a href="#">نمایندگی ها</a>
+            <a href="#">ارسال ملک</a>
+          </div>
+          <button class="dropdown-btn">امکانات
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#">مشاوران</a>
+            <a href="#">نمایندگی ها</a>
+            <a href="#">ارسال ملک</a>
+          </div>
+        <a href="#">تماس با ما</a>
+      </div>
+    <div class="container-fluid Header">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-md-2">
                 <a href="">
                     <img class="logo" src="images/logo.png" alt="">
                 </a>
             </div>
-            <div class="col-lg-9">
+            <div class="col-md-10"> 
                 <ul class="Navbar">
                     <a href="">
                         <li>
@@ -135,13 +170,16 @@
         <div class="container sell-box" id="sell-box">
             <form class="box" action="">
                 <div class="row">
-                    <div class="pad col-5">
-                        <input class="Input" type="text" placeholder="ملک ، موقعیت مکانی را وارد کنید ...">
+                    <div class="pad col-md-3 col-lg-3 col-12 col-sm-6">
+                        <input class="Input" type="text" placeholder="استان">
                     </div>
-                    <div class="pad col-4">
+                    <div class="pad col-md-3 col-lg-3 col-12 col-sm-6">
                         <input class="Input" type="text" placeholder="شهر">
                     </div>
-                    <div class="pad col-3">
+                    <div class="pad col-md-3 col-lg-3 col-12 col-sm-6">
+                        <input class="Input" type="text" placeholder="محله">
+                    </div>
+                    <div class="pad col-md-3 col-lg-3 col-12 col-sm-6">
                         <div class="Drop dropdown">
                             <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu4"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -160,7 +198,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="pad col-md-3 col-lg-3 col-12 col-sm-6">
                         <div class="Drop dropdown">
                             <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu5"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -180,7 +218,7 @@
                         </div>
     
                     </div>
-                    <div class="pad col-3">
+                    <div class="pad col-md-3 col-lg-3 col-12 col-sm-6">
                         <div class="Drop dropdown">
                             <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu6"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -200,7 +238,7 @@
                         </div>
     
                     </div>
-                    <div class="pad col-4">
+                    <div class="pad col-md-4 col-lg-4 col-12 col-sm-8">
                         <div class="Drop dropdown">
                             <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu7"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -217,10 +255,10 @@
                         </div>
     
                     </div>
-                    <div class="pad col-2">
+                    <div class="pad col-md-2 col-lg-2 col-12 col-sm-4">
                         <button class="Search Input" value="">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <span>جستجو</span>
+                            <span class="search">جستجو</span>
                         </button>
                     </div>
                 </div>
@@ -229,13 +267,16 @@
         <div class="container rent-box" id="rent-box">
             <form class="box" action="">
                 <div class="row">
-                    <div class="pad col-5">
-                        <input class="Input" type="text" placeholder="ملک ، موقعیت مکانی را وارد کنید ...">
+                    <div class="pad col-md-3 col-lg-3 col-12 col-sm-6">
+                        <input class="Input" type="text" placeholder="استان">
                     </div>
-                    <div class="pad col-4">
+                    <div class="pad col-md-3 col-lg-3 col-12 col-sm-6">
                         <input class="Input" type="text" placeholder="شهر">
                     </div>
-                    <div class="pad col-3">
+                    <div class="pad col-md-3 col-lg-3 col-12 col-sm-6">
+                        <input class="Input" type="text" placeholder="محله">
+                    </div>
+                    <div class="pad col-md-3 col-lg-3 col-12 col-sm-6">
                         <div class="Drop dropdown">
                             <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu4"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -254,7 +295,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="pad col-md-3 col-lg-3 col-12 col-sm-6">
                         <div class="Drop dropdown">
                             <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu5"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -274,24 +315,24 @@
                         </div>
     
                     </div>
-                    <div class="pad col-3">
+                    <div class="pad col-md-3 col-lg-3 col-12 col-sm-8">
                         <div class="Drop dropdown">
-                            <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu6"
+                            <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu7"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                <span>ودیعه</span>
+                                <span>رهن</span>
                             </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu6">
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu7">
                                 <li class="option">
-                                    <input class="Input rent-option" type="text" placeholder="حداقل رهن(تومان)"></ه>
+                                    <input class="Input rent-option" type="text" placeholder="حداقل قیمت (تومان)"></input>
                                 </li>
                                 <li class="option">
-                                    <input class="Input rent-option" type="text" placeholder="حداکثر رهن(تومان)"></ه>
+                                    <input class="Input rent-option" type="text" placeholder="حداکثر قیمت (تومان)"></input>
                                 </li>
                             </ul>
                         </div>
     
                     </div>
-                    <div class="pad col-4">
+                    <div class="pad col-md-4 col-lg-4 col-12 col-sm-8">
                         <div class="Drop dropdown">
                             <button class="Box btn dropdown-toggle" type="button" id="dropdownMenu7"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -299,19 +340,19 @@
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenu7">
                                 <li class="option">
-                                    <input class="Input rent-option" type="text" placeholder="حداقل اجاره (تومان)"></input>
+                                    <input class="Input rent-option" type="text" placeholder="حداقل قیمت (تومان)"></input>
                                 </li>
                                 <li class="option">
-                                    <input class="Input rent-option" type="text" placeholder="حداکثر اجاره (تومان)"></input>
+                                    <input class="Input rent-option" type="text" placeholder="حداکثر قیمت (تومان)"></input>
                                 </li>
                             </ul>
                         </div>
     
                     </div>
-                    <div class="pad col-2">
+                    <div class="pad col-md-2 col-lg-2 col-12 col-sm-4">
                         <button class="Search Input" value="">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <span>جستجو</span>
+                            <span class="search">جستجو</span>
                         </button>
                     </div>
                 </div>
@@ -325,7 +366,7 @@
     <h1>ملک های ویژه</h1>
     <p>ملک هایی که آینده درخشانی خواهند داشت.</p>
     <div class="row set-box">
-        <div class="col-4">
+        <div class="col-lg-4 col-md-6 mb-4 col-12 col-sm-12">
             <div class="post-box">
                 <img src="images/propertyImg01.jpg" alt="">
                 <h2>ویلا شمال تهران برای فروش</h2>
@@ -334,10 +375,16 @@
                     <span>تهران / آشتیانی</span>
                 </div>
                 <div class="post-icon">
-                    <i class="fa-solid fa-right-left"></i>
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="price d-inline-block">
-                        <span>4 میلیارد تومان</span>
+                    <div class="row">
+                        <div class="col-5">
+                            <i class="fa-solid fa-right-left"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="col-7">
+                            <div class="price d-inline-block">
+                                <span>4 میلیارد تومان</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="Icon-container container">
@@ -365,7 +412,7 @@
                 <input class="wide-btn" type="submit" value="مشاهده ملک">
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-md-6 mb-4 col-12 col-sm-12">
             <div class="post-box">
                 <img src="images/propertyImg02.jpg" alt="">
                 <h2>ویلا شمال تهران برای فروش</h2>
@@ -374,10 +421,16 @@
                     <span>تهران / آشتیانی</span>
                 </div>
                 <div class="post-icon">
-                    <i class="fa-solid fa-right-left"></i>
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="price d-inline-block">
-                        <span>4 میلیارد تومان</span>
+                    <div class="row">
+                        <div class="col-5">
+                            <i class="fa-solid fa-right-left"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="col-7">
+                            <div class="price d-inline-block">
+                                <span>4 میلیارد تومان</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="Icon-container container">
@@ -405,7 +458,7 @@
                 <input class="wide-btn" type="submit" value="مشاهده ملک">
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 col-md-6 mb-4 col-12 col-sm-12">
             <div class="post-box">
                 <img src="images/propertyImg03.jpg" alt="">
                 <h2>ویلا شمال تهران برای فروش</h2>
@@ -414,10 +467,154 @@
                     <span>تهران / آشتیانی</span>
                 </div>
                 <div class="post-icon">
-                    <i class="fa-solid fa-right-left"></i>
-                    <i class="fa-solid fa-heart"></i>
-                    <div class="price d-inline-block">
-                        <span>4 میلیارد تومان</span>
+                    <div class="row">
+                        <div class="col-5">
+                            <i class="fa-solid fa-right-left"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="col-7">
+                            <div class="price d-inline-block">
+                                <span>4 میلیارد تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Icon-container container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="icon">
+                                <i class="fa-solid fa-bed"></i>
+                                <p>اتاق خواب 3</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="icon">
+                                <i class="fa-solid fa-warehouse"></i>
+                                <p>پارکینگ 2</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="icon">
+                                <i class="fa-solid fa-bath"></i>
+                                <p>حمام 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input class="wide-btn" type="submit" value="مشاهده ملک">
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 col-12 col-sm-12">
+            <div class="post-box">
+                <img src="images/propertyImg01.jpg" alt="">
+                <h2>ویلا شمال تهران برای اجاره</h2>
+                <div class="box1">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <span>تهران / آشتیانی</span>
+                </div>
+                <div class="post-icon">
+                    <div class="row">
+                        <div class="col-5">
+                            <i class="fa-solid fa-right-left"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="col-7">
+                            <div class="price d-inline-block">
+                                <span>4 میلیارد تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Icon-container container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="icon">
+                                <i class="fa-solid fa-bed"></i>
+                                <p>اتاق خواب 3</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="icon">
+                                <i class="fa-solid fa-warehouse"></i>
+                                <p>پارکینگ 2</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="icon">
+                                <i class="fa-solid fa-bath"></i>
+                                <p>حمام 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input class="wide-btn" type="submit" value="مشاهده ملک">
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 col-12 col-sm-12">
+            <div class="post-box">
+                <img src="images/propertyImg02.jpg" alt="">
+                <h2>ویلا شمال تهران برای رهن</h2>
+                <div class="box1">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <span>تهران / آشتیانی</span>
+                </div>
+                <div class="post-icon">
+                    <div class="row">
+                        <div class="col-5">
+                            <i class="fa-solid fa-right-left"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="col-7">
+                            <div class="price d-inline-block">
+                                <span>4 میلیارد تومان</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Icon-container container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="icon">
+                                <i class="fa-solid fa-bed"></i>
+                                <p>اتاق خواب 3</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="icon">
+                                <i class="fa-solid fa-warehouse"></i>
+                                <p>پارکینگ 2</p>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="icon">
+                                <i class="fa-solid fa-bath"></i>
+                                <p>حمام 1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input class="wide-btn" type="submit" value="مشاهده ملک">
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4 col-12 col-sm-12">
+            <div class="post-box">
+                <img src="images/propertyImg03.jpg" alt="">
+                <h2>ویلا شمال تهران برای اجاره</h2>
+                <div class="box1">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <span>تهران / آشتیانی</span>
+                </div>
+                <div class="post-icon">
+                    <div class="row">
+                        <div class="col-5">
+                            <i class="fa-solid fa-right-left"></i>
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="col-7">
+                            <div class="price d-inline-block">
+                                <span>4 میلیارد تومان</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="Icon-container container">
@@ -462,14 +659,14 @@
     <h1>مکان های محبوب</h1>
     <p>لورم ایپسوم متن ساختگی با تولید سادگی</p>
     <div class="container">
-        <div class="row" style="padding: 0 5rem;margin-bottom: 5rem">
-            <div class="mb-3 col-8">
+        <div class="row cities" style="padding: 0 5rem;margin-bottom: 5rem">
+            <div class="mb-3 col-sm-8 col-md-8 col-lg-8 col-12">
                 <div class="txt-img brighten">
                     <img src="images/california.jpg" alt="">
                     <span>تهران</span>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-12 mb-3">
                 <div class="row">
                     <div class="txt-img brighten mb-3">
                         <img src="images/new_york.jpg" alt="">
@@ -481,19 +678,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-12 mb-3">
                 <div class="txt-img brighten">
                     <img src="images/san_francisco.jpg" alt="">
                     <span>شیراز</span>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-12 mb-3">
                 <div class="txt-img brighten">
                     <img src="images/dubai.jpg" alt="">
                     <span>همدان</span>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-sm-4 col-md-4 col-lg-4 col-12">
                 <div class="txt-img brighten">
                     <img src="images/australia.jpg" alt="">
                     <span>تبریز</span>
@@ -504,12 +701,12 @@
 </div>
 <div class="container-fluid rent">
     <h1>املاکی برای اجاره</h1>
-    <p>
+    <p class="rent-p">
         لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.
     </p>
     <div class="container">
-        <div class="row set-box" style="margin: 2rem 5rem !important">
-            <div class="col-4">
+        <div class="row set-box" id="set-box">
+            <div class="col-lg-4 col-md-6 mb-4 col-sm-12 col-12">
                 <div class="post-box">
                     <img src="images/propertyImg01.jpg" alt="">
                     <h2>ویلا شمال تهران برای اجاره</h2>
@@ -518,10 +715,16 @@
                         <span>تهران / آشتیانی</span>
                     </div>
                     <div class="post-icon">
-                        <i class="fa-solid fa-right-left"></i>
-                        <i class="fa-solid fa-heart"></i>
-                        <div class="price d-inline-block">
-                            <span>4 میلیارد تومان</span>
+                        <div class="row">
+                            <div class="col-5">
+                                <i class="fa-solid fa-right-left"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="col-7">
+                                <div class="price d-inline-block">
+                                    <span>4 میلیارد تومان</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="Icon-container container">
@@ -549,7 +752,7 @@
                     <input class="wide-btn" type="submit" value="مشاهده ملک">
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 mb-4 col-sm-12 col-12">
                 <div class="post-box">
                     <img src="images/propertyImg02.jpg" alt="">
                     <h2>ویلا شمال تهران برای رهن</h2>
@@ -558,10 +761,16 @@
                         <span>تهران / آشتیانی</span>
                     </div>
                     <div class="post-icon">
-                        <i class="fa-solid fa-right-left"></i>
-                        <i class="fa-solid fa-heart"></i>
-                        <div class="price d-inline-block">
-                            <span>4 میلیارد تومان</span>
+                        <div class="row">
+                            <div class="col-5">
+                                <i class="fa-solid fa-right-left"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="col-7">
+                                <div class="price d-inline-block">
+                                    <span>4 میلیارد تومان</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="Icon-container container">
@@ -589,7 +798,7 @@
                     <input class="wide-btn" type="submit" value="مشاهده ملک">
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-md-6 mb-4 col-sm-12 col-12">
                 <div class="post-box">
                     <img src="images/propertyImg03.jpg" alt="">
                     <h2>ویلا شمال تهران برای اجاره</h2>
@@ -598,10 +807,155 @@
                         <span>تهران / آشتیانی</span>
                     </div>
                     <div class="post-icon">
-                        <i class="fa-solid fa-right-left"></i>
-                        <i class="fa-solid fa-heart"></i>
-                        <div class="price d-inline-block">
-                            <span>4 میلیارد تومان</span>
+                        <div class="row">
+                            <div class="col-5">
+                                <i class="fa-solid fa-right-left"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="col-7">
+                                <div class="price d-inline-block">
+                                    <span>4 میلیارد تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Icon-container container">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="icon">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <p>اتاق خواب 3</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="icon">
+                                    <i class="fa-solid fa-warehouse"></i>
+                                    <p>پارکینگ 2</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="icon">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <p>حمام 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="wide-btn" type="submit" value="مشاهده ملک">
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-4 col-sm-12 col-12">
+                <div class="post-box">
+                    <img src="images/propertyImg01.jpg" alt="">
+                    <h2>ویلا شمال تهران برای اجاره</h2>
+                    <div class="box1">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <span>تهران / آشتیانی</span>
+                    </div>
+                    <div class="post-icon">
+                        <div class="row">
+                            <div class="col-5">
+                                <i class="fa-solid fa-right-left"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="col-7">
+                                <div class="price d-inline-block">
+                                    <span>4 میلیارد تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Icon-container container">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="icon">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <p>اتاق خواب 3</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="icon">
+                                    <i class="fa-solid fa-warehouse"></i>
+                                    <p>پارکینگ 2</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="icon">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <p>حمام 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="wide-btn" type="submit" value="مشاهده ملک">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 col-sm-12 col-12">
+                <div class="post-box">
+                    <img src="images/propertyImg02.jpg" alt="">
+                    <h2>ویلا شمال تهران برای رهن</h2>
+                    <div class="box1">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <span>تهران / آشتیانی</span>
+                    </div>
+                    <div class="post-icon">
+                        <div class="row">
+                            <div class="col-5">
+                                <i class="fa-solid fa-right-left"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="col-7">
+                                <div class="price d-inline-block">
+                                    <span>4 میلیارد تومان</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Icon-container container">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="icon">
+                                    <i class="fa-solid fa-bed"></i>
+                                    <p>اتاق خواب 3</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="icon">
+                                    <i class="fa-solid fa-warehouse"></i>
+                                    <p>پارکینگ 2</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="icon">
+                                    <i class="fa-solid fa-bath"></i>
+                                    <p>حمام 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="wide-btn" type="submit" value="مشاهده ملک">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 col-sm-12 col-12">
+                <div class="post-box">
+                    <img src="images/propertyImg03.jpg" alt="">
+                    <h2>ویلا شمال تهران برای اجاره</h2>
+                    <div class="box1">
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                        <span>تهران / آشتیانی</span>
+                    </div>
+                    <div class="post-icon">
+                        <div class="row">
+                            <div class="col-5">
+                                <i class="fa-solid fa-right-left"></i>
+                                <i class="fa-solid fa-heart"></i>
+                            </div>
+                            <div class="col-7">
+                                <div class="price d-inline-block">
+                                    <span>4 میلیارد تومان</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="Icon-container container">
@@ -650,8 +1004,8 @@
         <h1>مشاوران ما</h1>
         <p>لورم ایپسوم متن ساختگی با تولید سادگی
         </p>
-        <div class="row">
-            <div class="col-4">
+        <div class="row image-responsive-box">
+            <div class="col-md-6 col-lg-3 col-sm-12 mb-4">
                 <div class="image-area">
                     <div class="img-wrapper">
                         <img src="images/team_1.png" alt="">
@@ -667,7 +1021,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-6 col-lg-3 col-sm-12 mb-4">
                 <div class="image-area">
                     <div class="img-wrapper">
                         <img src="images/team_2.png" alt="">
@@ -683,7 +1037,23 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-6 col-lg-3 col-sm-12">
+                <div class="image-area">
+                    <div class="img-wrapper">
+                        <img src="images/team_2.png" alt="">
+                        <h2> نقی معمولی</h2>
+                        <ul>
+                            <li><a href="https://github.com/atuljustano"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://www.instagram.com/atulkprajapati2000/"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/atuljustano"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.youtube.com/channel/UCf-KfxuY8PZBSD_8RW2nYsw"><i
+                                    class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 col-sm-12">
                 <div class="image-area">
                     <div class="img-wrapper">
                         <img src="images/team_3.png" alt="">
@@ -703,18 +1073,18 @@
     </div>
 </section>
 <footer>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-3">
+            <div class="col-12 col-sm-7 col-md-3 col-lg-3">
                 <div class="footer-box">
-                    <a href=""><img src="images/logo2.png" alt=""></a>
+                    <a href=""><img src="images/logo2.png" class="footer-logo" alt=""></a>
                     <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
                         چاپگرها
                         و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
                     <input type="submit" value="بیشتر">
                 </div>
             </div>
-            <div class="col-2">
+            <div class="col-12 col-sm-5 col-md-2 col-lg-2">
                 <div class="footer-box">
                     <h3 class="title">لینک های سریع</h3>
                     <div class="Links">
@@ -738,7 +1108,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-sm-7 col-md-4 col-lg-4">
                 <div class="footer-box">
                     <h3 class="title">ویژگی های اخیر</h3>
                     <div class="footer-part line-bottom">
@@ -763,7 +1133,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-3">
+            <div class="col-12 col-sm-5 col-md-3 col-lg-3">
                 <div class="footer-box">
                     <h3 class="title">اطلاعات تماس</h3>
                     <div class="map-sign" style="font-size: 30px">
@@ -789,6 +1159,8 @@
         </div>
     </div>
 </footer>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -796,6 +1168,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
         integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/js.js"></script>
 </body>
-<script src="js/js.js"></script>
 </html>

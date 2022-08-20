@@ -43,15 +43,15 @@ img {
 }
 
 .Y_btn {
-    margin-right: 10px;
-    float:left;
-    margin-left: 50px;
+  margin-right: 10px;
+  float: left;
+  margin-left: 50px;
 }
 
 .Phone_Icon {
   font-size: 20px;
   margin-right: 10px;
-  float:left;
+  float: left;
   margin-top: 15px;
 }
 
@@ -65,7 +65,7 @@ img {
 }
 
 .Social_Icons {
-  margin-right: 13rem;
+  text-align: center;
 }
 
 .Num {
@@ -81,8 +81,8 @@ img {
   padding: 13px 25px;
   display: inline-block;
   color: snow;
-  background-color:transparent;
-  border:none;
+  background-color: transparent;
+  border: none;
 }
 .Phone_Number {
   display: inline-block;
@@ -100,7 +100,6 @@ img {
 .Navbar {
   margin-top: 25px;
   float: left;
-
 }
 
 .logo {
@@ -169,9 +168,10 @@ div.Banner div.btn_handel div.btn-back {
 }
 
 .box {
-  margin: 2% 11%;
   background: rgba(255, 255, 250, 0.2);
   padding: 25px;
+  position: absolute;
+  margin-top: 15px;
 }
 
 .Input {
@@ -313,7 +313,7 @@ div.Banner div.btn_handel div.btn-back {
 }
 
 .post-box h2 {
-  margin: 15px 0 40px 0;
+  margin: 15px 0 20px 0;
   font-size: 20px;
   font-weight: bold;
   text-align: right !important;
@@ -358,14 +358,13 @@ div.Banner div.btn_handel div.btn-back {
   padding: 7px;
   box-shadow: grey;
 }
-
+.price {
+  text-align: center;
+}
 .price span {
-  color: #32CD32;
-  font-size: 22px;
+  color: #32cd32;
+  font-size: 20px;
   font-weight: bold;
-  margin-right: 30px;
-  position: relative;
-  bottom: 10px;
 }
 
 .icon {
@@ -514,6 +513,7 @@ div.Banner div.btn_handel div.btn-back {
 
 .rent {
   background-image: url("../images/rent.jpg");
+  background-repeat: repeat-y;
   background-size: cover;
   text-align: center;
   padding-top: 70px;
@@ -571,8 +571,8 @@ p {
 }
 
 .img-wrapper {
-  width: 300px;
-  height: 400px;
+  width: 100%;
+  height: auto;
   position: relative;
   overflow: hidden;
   margin: auto;
@@ -598,8 +598,8 @@ p {
 }
 
 .img-wrapper img {
-  height: 400px;
-  width: 300px;
+  height: auto;
+  width: 75%;
   filter: grayscale(100%);
   transition: 2s;
 }
@@ -692,7 +692,7 @@ p {
 
 footer {
   background-color: black;
-  padding: 2rem 12rem;
+  padding: 2rem 6.5rem;
 }
 
 .footer-box {
@@ -882,13 +882,19 @@ footer {
 
 .rent-box {
   position: absolute;
-  left: 6rem;
   visibility: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 65vw !important;
 }
 
 .sell-box {
   position: absolute;
-  left: 6rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 65vw !important;
 }
 
 .dropdown-item:active {
@@ -900,4 +906,107 @@ footer {
 }
 .option {
   padding: 0 !important;
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  text-align: right;
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+.fa-bars {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 20px;
+  margin-top: 11px;
+  font-size: 25px;
+  color: snow;
+  cursor: pointer;
+}
+.side-logo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  width: 250px;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.dropdown-container a {
+  padding-left: 25px;
+}
+.sidenav .Y_btn {
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 1px solid snow;
+  border-top: 1px solid snow;
+  margin-bottom: 10px;
+}
+.sidenav .Aqua_btn {
+  padding: 8px 30px;
+}
+
+#set-box {
+  margin: 2rem 5rem !important;
 }
