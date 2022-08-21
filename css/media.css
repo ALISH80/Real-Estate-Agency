@@ -502,6 +502,16 @@
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1220px) {
+  .fa-heart,
+  .fa-right-left {
+    font-size: 11px;
+  }
+  .price span {
+    font-size: 16px;
+}
+  .post-box h2 {
+    font-size: 17px;
+  }
   footer {
     background-color: black;
     padding: 2rem 2.5rem;
